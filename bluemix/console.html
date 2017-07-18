@@ -1,0 +1,61 @@
+    <nav>
+        <div class="sidebar collapse navbar-collapse col-xs-6 pull-right" id="myNavbar">
+                    <div class="sidebar-nav">
+                        <ul class="nav" id="side-menu">
+                            <ul class="nav">
+                                <li><a href="#" ng-click="getProductsList()">ALL CATEGORIES</a></li>
+                            </ul>                    
+                            <ul class="nav" ng-repeat="x in categories">
+                                <li><a href="#" ng-click="filterProductsByCategory(x.categoryId)">{{x.CategoryName}}<span class="fa arrow"></span></a> 
+                                    <ul class="nav nav-second-level">
+                                        <li ng-repeat="y in x.subCategories">
+                                            <a href="#" ng-model="y.CategoryName" ng-click="filterProductsBySubCategory(y.categoryId)">{{y.CategoryName}}</a>
+                                        </li>
+                                    </ul>
+                                </li>    
+                            </ul>   
+                        </ul>
+                    </div>
+        </div> 
+    </nav>  
+    <div id="page-wrapper">
+            <div class="page-content">
+                <div class="row pull-right">
+                    <div class="col-md-12">
+                        <div class="search">
+                            <input type="text" class="form-control input-sm" maxlength="64" placeholder="Filter"/>
+                            <button type="submit" class="btn btn-primary btn-sm search-btn">Filter</button>
+                        </div>
+                    </div>
+                </div>              
+                <div ng-repeat="category in filtered" class="col-md-12 col-xs-12">
+                    <h3 class="content-headings">{{category.name}}</h3>
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12" ng-repeat="subCat in category.subCategories">                            
+                            <b>{{subCat.name}}</b>
+                            <div class="row">
+                                <a class="col-md-4 category-content" ui-sref="content" ng-repeat="prod in subCat.products" ng-click="contented(prod)">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 well well-sm blocks">
+                                        <div class="category-contents">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-3">
+                                                    <img class="content-logo" ng-src="{{prod.img}}">
+                                                </div>
+                                                <div class="col-md-8 col-sm-8 col-xs-9">
+                                                    <h5>{{prod.productName}}</h5>
+                                                    <p>{{prod.description|limitTo:50}}</p>                            
+                                                </div>
+                                                <div class=" badges"> 
+                                                    <span class="badge">{{prod.tags}}</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </a>
+                            </div> 
+                        </div>
+                    </div>   
+                </div>          
+        </div> 
+    </div>
+   

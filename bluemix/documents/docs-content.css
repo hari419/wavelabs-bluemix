@@ -1,0 +1,20 @@
+.docs-content{
+	font-size: 17px;
+}
+
+.title{
+    font-size: 30px;
+    margin-top: 10px;
+    border-bottom: 2px solid #337ab7;
+    color: #337ab7;
+    margin-bottom: 30px;
+}
+.modal-img{
+	height: 350px;
+	width: 598px;
+}
+.modal-body{
+	padding: 0;
+	height: 350px;
+	width: 580px;
+}

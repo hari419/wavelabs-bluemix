@@ -1,0 +1,84 @@
+        <div class="cont-content">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <a ui-sref="console">
+                        <span class="glyphicon glyphicon-arrow-left"></span>View All
+                    </a>
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <div class="title">
+                        <h2>{{arrayX[0].productName}}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 description">
+                    <p>{{arrayX[0].description}}</p>
+                    <span class="badge">{{arrayX[0].tags}}</span>
+                    <a ui-sref="docs" class="pull-right">View Docs...</a>
+                    <div class="col-md-12 col-xs-12 runlink">
+                        <span class="glyphicon glyphicon-circle-arrow-right"></span>&nbsp;<a href="http://calendarapp-muggier-electromagnetist.cfapps.io/swagger-ui.html" target="_blank">Click here to run</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-offset-1 col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>{{arrayX[0].add_desc}}</p>
+                        </div>
+                        <div class="features col-md-12">
+                            <h3>Features</h3>
+                            <div class="col-md-12">                           
+                                <ul>
+                                    <li ng-repeat="feature in features">{{feature}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Images</h3>
+                            <p>Click an image to enlarge and view screen captures, slides, or videos. Screen caps show the user interface for the service after it has been provisioned.</p>
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3" ng-repeat="img in caroselimg">
+                                    <a href="" data-toggle="modal" data-target="#myModal"><img class="content-images" ng-src="{{img}}"></a>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                            <ol class="carousel-indicators">
+                                              <li data-target="#myCarousel" data-slide-to="0"></li>
+                                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                                            </ol>
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner">
+                                              <div class="item active" ng-repeat="img in caroselimg">
+                                                <img class="carousel-images" ng-src="{{img}}" />
+                                              </div>
+                                            </div>
+                                            <!-- Left and right controls -->
+                                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                              <span class="glyphicon glyphicon-chevron-left"></span>
+                                              <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                              <span class="glyphicon glyphicon-chevron-right"></span>
+                                              <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    <div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div> 
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,57 @@
+<html>
+<meta charset="UTF-8">
+<title>My First Project</title>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/homepage.css">
+</head>
+<body>
+	<div class="container-fluid" ng-controller="homectrl">
+		<div class="row header">
+			<div class="col-md-3"><a href="index.html"><img class="col-md-8 col-xs-4 logo" src="http://10.9.9.92:9090/bluemix/images/Wavelabs-logo.png"></a></div>
+			<div class="col-md-2 pull-right">
+				<select class="form-control bluemix">
+					<option ng-disabled="true">select console</option>
+					<option>Wavelabs</option>
+					<option>Care</option>
+            	</select>
+			</div>
+		</div>
+		<div class="row banners">
+			<img class="banner" src="http://10.9.9.92:9090/bluemix/images/banner.jpg">
+		</div>
+		<div class="col-md-4 col-md-offset-1 banner-text">
+			<div>
+				<div class="think-upper">
+					THINK UPPER
+				</div>
+				<div class="creative">
+					WE ARE MASSIVE FOR CREATIVE
+				</div>
+				<div class="banner-buttons">
+					<a href="TEMPLATE.html"><button class="btn btn-md">WAVELABS</button></a>
+					<a href="TEMPLATE.html"><button class="btn btn-md">CARE</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="row footer">
+			<div class="col-md-8 col-xs-7 footer-text">
+				@copyright | All rights reserved
+			</div>
+			<div class="col-md-3 col-xs-4 social-links">
+				<ul class="social-icon animate pull-right">
+                  <li><a href="#" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li> 
+                  <li><a href="#" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" title="google plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#" title="linkedin" target="_blank"><i class="fa fa fa-linkedin"></i></a></li>
+                </ul>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
