@@ -1,0 +1,214 @@
+        <div class="docs-content">
+            <div class="row search-bar">
+                <div class="input-group col-md-11">
+                    <input type="text" class="form-control" placeholder="Search" name="search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row search-bar">
+                <div class="deploy-tools">
+                    <h3 style="text-align:center; color: #337ab7;">Get started by deploying your first App</h3>
+                    <a ui-sref="docs-starters" ng-repeat="starter in starters" ng-click="startered(starter)"><div class="col-md-2 col-xs-12 deploy-tools"><img class="col-md-4 col-xs-4 deploy-icons" ng-src="{{starter.img}}">
+                        <b style="text-align:center;" class="col-md-12 col-xs-6 app-names">{{starter.productName}}</b>
+                    </div></a>
+                </div>    
+            </div>  
+            <div class="row search-bar bluemix-platform">
+                <h3 style="text-align:center; color: #337ab7;">Bluemix Platform</h3>
+                <hr>
+                <div class="col-md-3">
+
+                    <ul>
+                       
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  What is Bluemix?</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Managing your Account</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Managing Identity and Access</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  CLI and DEV Tools</span></a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="col-md-3">
+                    <ul>
+                       
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Service Availability</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Managing Apps</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Monitoring and Logging</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Managing API's</span></a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="col-md-3">
+                    <ul>
+                        
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Bluemix Security</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Hybrid</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Managing Billing and Usuage</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Trouble Shooting</span></a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="col-md-3">
+                    <ul>                       
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Notices and Terms of Use</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Glossary</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  What's new?</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-file"></span><span class="tools">  Architecture Center</span></a>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+            <div class="row search-bar bluemix-platform">
+                <h3 style="text-align:center; color: #337ab7;">Compute & Services</h3>
+            <hr>
+                <div class="col-md-3">
+
+                    <ul>
+                        <li><b>Compute</b></li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  What is Bluemix?</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/cdn.png"><span class="tools">  Managing your Account</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/direct-link.png"><span class="tools">  Managing Identity and Access</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/domain-name-service.png"><span class="tools">  CLI and DEV Tools</span></a>
+                        </li>                        
+                    </ul>
+                    <ul>
+                        <li><b>Boilerplates</b></li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/file-storage.png"><span class="tools">  Analytics for Apache Spark Starter</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/firewall.png"><span class="tools">  Conversational Agent Starter</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  IBM XPages Web Starter</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/im1.png"><span class="tools">  loT for Electronics Starter</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/object-storage.png"><span class="tools">  Java cloudant Web Starter</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/virtual-server.png"></span><span class="tools">  Java Workload Scheduler Web Starter</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/ssl-cert.png"></span><span class="tools">  Loopback Starter</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/vlan.png"><span class="tools">  Nodered Starter</span></a>
+                        </li>                                
+                    </ul>
+                </div> 
+                <div class="col-md-3">
+                    <ul>
+                        <li><b>Watson</b></li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/file-storage.png"></span><span class="tools">  Conversation</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  Discovery</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/ssl-cert.png"><span class="tools">  Document Conversion</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  Language Translator</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  Natural Language Classifier</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  Natural Language Understanding</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  Personality Insights</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/file-storage.png"><span class="tools">  Retrieve and Rank</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  Speech to Text</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  Text to Speech</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/ssl-cert.png"><span class="tools">  Tone Analyzer</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  Visual Recognition</span></a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="col-md-3">
+                    <ul>
+                        <li><b>Security</b></li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"></span><span class="tools">  Bluemix Security</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  Hybrid</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  Managing Billing and Usuage</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/file-storage.png"><span class="tools">  Trouble Shooting</span></a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="col-md-3">
+                    <ul>
+                        <li><b>Web and Mobile</b></li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  Notices and Terms of Use</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/file-storage.png"><span class="tools">  Glossary</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/block-storage.png"><span class="tools">  What's new?</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="cs_logos" src="http://10.9.9.92:9090/bluemix/icons/ssl-cert.png"><span class="tools">  Architecture Center</span></a>
+                        </li>
+                    </ul>
+                </div>   
+        </div> 

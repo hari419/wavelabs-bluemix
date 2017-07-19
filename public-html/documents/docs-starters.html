@@ -1,0 +1,57 @@
+<div class="cont-content docs-content">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <a ui-sref="documents">
+                <span class="glyphicon glyphicon-arrow-left"></span>Back
+            </a>
+        </div>
+        <div class="col-md-12 col-xs-12">
+            <div class="title">
+                <h2>{{startercont.productName}}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-xs-12">
+        <h3>Getting started with {{startercont.productName}} starter App</h3>
+        <p>By following this guide, you can use this service in your application</p>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Prerequisites</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="http://console.nbos.io/#/idn/login" target="_blank">NBOS account</a></li>
+                    <li><a href="https://github.com/cloudfoundry/cli#downloads" target="_blank">Cloudfoundry</a></li>
+                    <li><a href="http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/neon2">Eclipse IDE</a></li>
+                    <li><a href="https://git-scm.com/downloads">GIT</a></li>
+                </ul>   
+            </div>
+        </div>
+        <div>
+            <div class="headings">1.Clone the Sample App</div>
+            <p>First, clone the sample App from Github repo</p>
+            <code>git clone https://gitlab.com/wavelabs/idn-api-spring.git</code>
+
+            <div class="headings">2.Run the App locally using the cmd</div>
+            <ul>
+                <li>
+                    <p>On cmd, change the directory to where the sample app is located</p>
+                    <code>cd idn-api-spring</code>
+                </li>
+                <li>
+                    <p>Use Maven to install dependencies and buid the .war file</p>
+                    <code>mvn clean install</code>
+                </li>
+
+                <li>
+                    <p>Run the App locally</p>
+                    <code>mvn spring-boot:run</code>
+                </li>
+            </ul>
+            <i>Note: To stop the app-run press ctrl+c in the cmd</i>
+
+            <div class="headings">3.Prepare the app for deployment</div>
+            <p>To deploy to Bluemix, it can be helpful to set up a manifest.yml file. The manifest.yml includes basic information about your app, such as the name, how much memory to allocate for each instance and the route. We've provided a sample manifest.yml file in the get-started-java directory.</p>
+        </div>    
+    </div>
+</div>    
