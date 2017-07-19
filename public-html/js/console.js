@@ -39,7 +39,7 @@ app.config(['$stateProvider',"$urlRouterProvider",function($stateProvider, $urlR
 }]);
 
 app.controller("myctrl", ['$scope','$http','$state','lodash',"$sce", function($scope,$http,$state,lodash,$sce){
-  $http.get('http://10.9.9.92:9090/bluemix/public-html/js/datas.json')
+  $http.get('../js/datas.json')
   .then(function(response){
      $scope.categories = response.data.categori;
      $scope.starters = [];
